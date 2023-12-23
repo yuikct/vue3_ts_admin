@@ -9,6 +9,7 @@ import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import 'virtual:svg-icons-register'
 // 引入路由
 import router from './router'
+import pinia from './store'
 const app = createApp(App)
 // 注册全局组件
 import gloablComponent from '@/components/index'
@@ -19,5 +20,6 @@ app.use(ElementPlus, {
   locale: zhCn,
 })
 app.use(router)
+app.use(pinia)
 
 app.mount('#app')
