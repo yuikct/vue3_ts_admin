@@ -3,11 +3,13 @@ import { reqLogin } from '@/api/user'
 import { defineStore } from 'pinia'
 import type { loginForm } from '@/api/user/type'
 import type { UserState } from './types'
+import { constantRoute } from '@/router/routes'
 const useUserStore = defineStore('User', {
   // 小仓库存储数据的地方
   state: (): UserState => {
     return {
       token: localStorage.getItem('TOKEN'),
+      menuRoutes: constantRoute,
     }
   },
   // 异步|逻辑的地方

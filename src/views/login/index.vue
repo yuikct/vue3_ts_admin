@@ -45,7 +45,7 @@
 <script setup lang="ts">
 import { User, Lock } from '@element-plus/icons-vue'
 
-import {  reactive, ref } from 'vue'
+import { reactive, ref } from 'vue'
 import useUserStore from '@/store/modules/user'
 import { useRouter } from 'vue-router'
 import { ElMessage, ElNotification } from 'element-plus'
