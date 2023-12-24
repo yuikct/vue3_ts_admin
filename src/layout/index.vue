@@ -1,7 +1,9 @@
 <template>
   <el-container class="layout-container" style="height: 100vh">
-    <el-aside width="200px"
-      :class="{ isCollapse: LayOutSettingStore.isCollapse ? true : false }">
+    <el-aside
+      width="200px"
+      :class="{ isCollapse: LayOutSettingStore.isCollapse ? true : false }"
+    >
       <el-scrollbar>
         <el-menu
           :default-active="$route.path"
@@ -21,10 +23,14 @@
       <el-header style="text-align: right; font-size: 12px">
         <TabBar style="width: 100%" />
       </el-header>
-      <el-main :style="{
-        left: !LayOutSettingStore.isCollapse ? '200px' : '56px',
-        width:LayOutSettingStore.isCollapse?'calc(100% - 56px)':'calc(100% - 200px)'
-      }">
+      <el-main
+        :style="{
+          left: !LayOutSettingStore.isCollapse ? '200px' : '56px',
+          width: LayOutSettingStore.isCollapse
+            ? 'calc(100% - 56px)'
+            : 'calc(100% - 200px)',
+        }"
+      >
         <Main></Main>
       </el-main>
     </el-container>
@@ -43,7 +49,7 @@ import useLayOutSettingStore from '@/store/modules/setting'
 let userStore = useUserStore()
 let $route = useRoute()
 console.log(userStore.menuRoutes)
-let LayOutSettingStore =useLayOutSettingStore()
+let LayOutSettingStore = useLayOutSettingStore()
 </script>
 
 <style scoped lang="scss">

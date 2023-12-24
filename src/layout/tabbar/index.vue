@@ -1,12 +1,12 @@
 <template>
-<div class="toolbar">
-      <div class="toolbar_left">
-        <BreadCrumb />
-      </div>
-      <div class="toolbar_right">
-        <Setting />
-      </div>
+  <div class="toolbar">
+    <div class="toolbar_left">
+      <BreadCrumb />
     </div>
+    <div class="toolbar_right">
+      <Setting />
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -30,5 +30,4 @@ import BreadCrumb from './breadcrumb/index.vue'
     align-items: center;
   }
 }
-
 </style>

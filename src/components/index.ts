@@ -1,7 +1,6 @@
 import SvgIcon from './SvgIcon/index.vue'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
-
 import type { App, Component } from 'vue'
 // 全局对象
 const components: { [name: string]: Component } = { SvgIcon }
