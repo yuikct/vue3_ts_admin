@@ -49,14 +49,14 @@ import { reactive, ref } from 'vue'
 import useUserStore from '@/store/modules/user'
 import { useRouter } from 'vue-router'
 import { ElMessage, ElNotification } from 'element-plus'
-import { getTime } from '../../../utils/time'
+import { getTime } from '@/utils/time'
 let $router = useRouter()
 let useStore = useUserStore()
 let loading = ref(false)
 // const identifyCode = ref('1234')
 // const identifyCodes = ref('1234567890abcdefjhijklinopqrsduvwxyz')
 // 收集表单数据
-let loginForm = reactive({ username: 'admin', password: '111111' })
+let loginForm = reactive({ username: 'admin', password: 'atguigu123' })
 // 重置验证码
 // const refreshCode = () => {
 //   identifyCode.value = ''
@@ -174,3 +174,4 @@ let login = async () => {
   }
 }
 </style>
+../../utils/time

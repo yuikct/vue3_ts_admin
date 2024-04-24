@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import useLayoutSettingStore from '../../../store/modules/setting'
 
-import { ArrowRight, Fold, Expand } from '@element-plus/icons-vue'
+import { Fold, Expand } from '@element-plus/icons-vue'
 let LayOutSettingStore = useLayoutSettingStore()
 const changeIcon = () => {
   LayOutSettingStore.isCollapse = !LayOutSettingStore.isCollapse

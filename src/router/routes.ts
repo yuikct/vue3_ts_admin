@@ -30,6 +30,27 @@ export const constantRoute = [
       },
     ],
   },
+  // {
+  //   path: '/doc',
+  //   component: () => import('@/layout/index.vue'),
+  //   name: 'layout',
+  //   meta: {
+  //     title: 'layout',
+  //     hidden: false,
+  //     icon: '',
+  //   },
+  //   redirect:'/document',
+  //   children: [{
+  //     path:'/document',
+  //     component: () => import('@/views/document/index.vue'),
+  //     meta:{
+  //       title:'文档',
+  //       hidden:false,
+  //       icon:'ocument'
+  //     }
+  //   }],
+  // },
+
   {
     path: '/404',
     component: () => import('@/views/404/index.vue'),

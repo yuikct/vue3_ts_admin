@@ -5,6 +5,7 @@
       :class="{ isCollapse: LayOutSettingStore.isCollapse ? true : false }"
     >
       <el-scrollbar>
+        <Logo></Logo>
         <el-menu
           :default-active="$route.path"
           active-text-color="#fff"
@@ -14,7 +15,7 @@
           :router="true"
         >
           <!-- :collapse="LayOutSettingStore.isCollapse" -->
-          <Login></Login>
+
           <Menu :menuList="userStore.menuRoutes"></Menu>
         </el-menu>
       </el-scrollbar>
@@ -38,7 +39,7 @@
 </template>
 
 <script setup lang="ts">
-import Login from './login/index.vue'
+import Logo from './logo/index.vue'
 import Menu from './menu/index.vue'
 import Main from './main/index.vue'
 import TabBar from './tabbar/index.vue'
