@@ -10,7 +10,7 @@ import 'virtual:svg-icons-register'
 // 引入路由
 import router from './router'
 import pinia from './store'
-import '@/permission'
+// import '@/permission'
 const app = createApp(App)
 // 注册全局组件
 import gloablComponent from '@/components/index'

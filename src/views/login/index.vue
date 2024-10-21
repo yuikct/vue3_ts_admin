@@ -131,7 +131,7 @@ let login = async () => {
   loading.value = true
   console.log('提交表单：', loginForm)
   try {
-    await useStore.userLogin(loginForm)
+    // await useStore.userLogin(loginForm)
     $router.push('/')
     ElNotification({
       type: 'success',
