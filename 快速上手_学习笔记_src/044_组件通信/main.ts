@@ -1,6 +1,6 @@
-import {createApp} from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
-import {createPinia} from 'pinia'
+import { createPinia } from 'pinia'
 import router from './router'
 
 // 创建应用

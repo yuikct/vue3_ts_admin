@@ -1,10 +1,10 @@
-import {defineStore} from 'pinia'
+import { defineStore } from 'pinia'
 
-export const useCountStore = defineStore('count',{
+export const useCountStore = defineStore('count', {
   // 真正存储数据的地方
-  state(){
+  state() {
     return {
-      sum:6
+      sum: 6,
     }
-  }
+  },
 })

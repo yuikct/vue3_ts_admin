@@ -10,43 +10,43 @@ import Pinia from '@/pages/08_pinia/Father.vue'
 import Slot from '@/pages/09_slot/Father.vue'
 
 export default createRouter({
-	history: createWebHistory(),
-	routes: [
-		{
-			path: '/props',
-			component: Props
-		},
-		{
-			path: '/event',
-			component: Event
-		},
-		{
-			path: '/mitt',
-			component: Bus
-		},
-		{
-			path: '/model',
-			component: Model
-		},
-		{
-			path: '/attrs',
-			component: AttrsListeners
-		},
-		{
-			path: '/ref-parent',
-			component: RefChildrenParent
-		},
-		{
-			path: '/provide-inject',
-			component: ProvideInject
-		},
-		{
-			path: '/pinia',
-			component: Pinia
-		},
-		{
-			path: '/slot',
-			component: Slot
-		},
-	]
+  history: createWebHistory(),
+  routes: [
+    {
+      path: '/props',
+      component: Props,
+    },
+    {
+      path: '/event',
+      component: Event,
+    },
+    {
+      path: '/mitt',
+      component: Bus,
+    },
+    {
+      path: '/model',
+      component: Model,
+    },
+    {
+      path: '/attrs',
+      component: AttrsListeners,
+    },
+    {
+      path: '/ref-parent',
+      component: RefChildrenParent,
+    },
+    {
+      path: '/provide-inject',
+      component: ProvideInject,
+    },
+    {
+      path: '/pinia',
+      component: Pinia,
+    },
+    {
+      path: '/slot',
+      component: Slot,
+    },
+  ],
 })

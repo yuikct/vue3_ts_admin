@@ -1,9 +1,9 @@
-import { ref ,onMounted,computed} from 'vue'
+import { ref, onMounted, computed } from 'vue'
 
 export default function () {
   // 数据
   let sum = ref(0)
-  let bigSum = computed(()=>{
+  let bigSum = computed(() => {
     return sum.value * 10
   })
 
@@ -13,10 +13,10 @@ export default function () {
   }
 
   // 钩子
-  onMounted(()=>{
+  onMounted(() => {
     add()
   })
 
   // 给外部提供东西
-  return {sum,add,bigSum}
+  return { sum, add, bigSum }
 }

@@ -7,17 +7,17 @@
         <!-- <RouterLink :to="`/news/detail/${news.id}/${news.title}/${news.content}`">{{news.title}}</RouterLink> -->
 
         <!-- 第二种写法 -->
-        <RouterLink 
+        <RouterLink
           :to="{
-            name:'xiang',
-            query:{
-              id:news.id,
-              title:news.title,
-              content:news.content
-            }
+            name: 'xiang',
+            query: {
+              id: news.id,
+              title: news.title,
+              content: news.content,
+            },
           }"
         >
-          {{news.title}}
+          {{ news.title }}
         </RouterLink>
       </li>
     </ul>
@@ -29,16 +29,15 @@
 </template>
 
 <script setup lang="ts" name="News">
-  import {reactive} from 'vue'
-  import {RouterView,RouterLink} from 'vue-router'
+import { reactive } from 'vue'
+import { RouterView, RouterLink } from 'vue-router'
 
-  const newsList = reactive([
-    {id:'asfdtrfay01',title:'很好的抗癌食物',content:'西蓝花'},
-    {id:'asfdtrfay02',title:'如何一夜暴富',content:'学IT'},
-    {id:'asfdtrfay03',title:'震惊，万万没想到',content:'明天是周一'},
-    {id:'asfdtrfay04',title:'好消息！好消息！',content:'快过年了'}
-  ])
-
+const newsList = reactive([
+  { id: 'asfdtrfay01', title: '很好的抗癌食物', content: '西蓝花' },
+  { id: 'asfdtrfay02', title: '如何一夜暴富', content: '学IT' },
+  { id: 'asfdtrfay03', title: '震惊，万万没想到', content: '明天是周一' },
+  { id: 'asfdtrfay04', title: '好消息！好消息！', content: '快过年了' },
+])
 </script>
 
 <style scoped>
@@ -55,13 +54,13 @@
   padding-left: 10px;
 }
 .news li::marker {
-  color: #64967E;
+  color: #64967e;
 }
-.news li>a {
+.news li > a {
   font-size: 18px;
   line-height: 40px;
   text-decoration: none;
-  color: #64967E;
+  color: #64967e;
   text-shadow: 0 0 1px rgb(0, 84, 0);
 }
 .news-content {

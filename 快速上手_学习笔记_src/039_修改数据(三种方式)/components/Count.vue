@@ -13,44 +13,42 @@
 </template>
 
 <script setup lang="ts" name="Count">
-  import { ref,reactive } from "vue";
-  // 引入useCountStore
-  import {useCountStore} from '@/store/count'
-  // 使用useCountStore，得到一个专门保存count相关的store
-  const countStore = useCountStore()
+import { ref, reactive } from 'vue'
+// 引入useCountStore
+import { useCountStore } from '@/store/count'
+// 使用useCountStore，得到一个专门保存count相关的store
+const countStore = useCountStore()
 
-  // 数据
-  let n = ref(1) // 用户选择的数字
-  // 方法
-  function add(){
-    // 第一种修改方式
-    // countStore.sum += 1
+// 数据
+let n = ref(1) // 用户选择的数字
+// 方法
+function add() {
+  // 第一种修改方式
+  // countStore.sum += 1
 
-    // 第二种修改方式
-    /* countStore.$patch({
+  // 第二种修改方式
+  /* countStore.$patch({
       sum:888,
       school:'尚硅谷',
       address:'北京'
     }) */
 
-    // 第三种修改方式
-    countStore.increment(n.value)
-
-  }
-  function minus(){
-    
-  }
+  // 第三种修改方式
+  countStore.increment(n.value)
+}
+function minus() {}
 </script>
 
 <style scoped>
-  .count {
-    background-color: skyblue;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px;
-  }
-  select,button {
-    margin: 0 5px;
-    height: 25px;
-  }
+.count {
+  background-color: skyblue;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+}
+select,
+button {
+  margin: 0 5px;
+  height: 25px;
+}
 </style>

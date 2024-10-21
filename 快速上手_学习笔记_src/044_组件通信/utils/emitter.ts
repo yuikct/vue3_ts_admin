@@ -24,6 +24,5 @@ setTimeout(() => {
   emitter.all.clear()
 }, 3000); */
 
-
 // 暴露emitter
 export default emitter
